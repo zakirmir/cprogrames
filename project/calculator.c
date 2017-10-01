@@ -140,7 +140,7 @@ void scientific(){
     }
     if (n>=1 && n<=11){
 	
-    	if (result == -272241.812500)
+    	if (result == 557135104.000000)
 			printf("\n Not defined\n");
 		else
         	printf("\n Result : %f\n",result);
