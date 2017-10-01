@@ -57,7 +57,7 @@ int main(void){
 }
 
 void standard() {
-	int n;
+    int n;
     float x,y,result;
     
     printf("\nWhat do you want to do?\n\n");
@@ -65,22 +65,22 @@ void standard() {
 	scanf ("%d",&n);
 	
 	if (n>=1 && n<=4){
-    	printf("\nEnter 1st numbers : ");
-    	scanf("%f", &x);
+		printf("\nEnter 1st numbers : ");
+		scanf("%f", &x);
 		printf("\nEnter 2nd numbers : ");
-    	scanf("%f", &y);
+		scanf("%f", &y);
 		switch (n){
-	        case 1: result = add(x, y);    break;
-	        case 2: result = subtract(x, y);   break;
-	        case 3: result = multiply(x, y);   break;
-	        case 4: result = division(x, y);   break;
-    	}
+			case 1: result = add(x, y);    break;
+			case 2: result = subtract(x, y);   break;
+			case 3: result = multiply(x, y);   break;
+			case 4: result = division(x, y);   break;
+		}
 	}
 
 	if (n>=1 && n<=4)
-			printf("\n Result : %f\n",result);
+		printf("\n Result : %f\n",result);
 	else
-    	printf("\nWrong input.\n");
+		printf("\nWrong input.\n");
 }
 
 float add(float a, float b){
@@ -100,7 +100,7 @@ float division(float a, float b){
 }
 
 void scientific(){
-	int n;
+    int n;
     float x,y,result;
     
     printf("\nWhat do you want to do?\n\n");
@@ -112,25 +112,25 @@ void scientific(){
         printf("\n Enter a angle : ");
         scanf("%f",&x);
         
-		switch (n){
-            case 1: result = sine(x);       break;
-            case 2: result = cosine(x);     break;
-            case 3: result = tangent(x);    break;
-			case 4: result = 1/sine(x);       break;
-            case 5: result = 1/cosine(x);     break;
-            case 6: result = 1/tangent(x);    break;            
+	switch (n){
+		case 1: result = sine(x);       break;
+		case 2: result = cosine(x);     break;
+		case 3: result = tangent(x);    break;
+		case 4: result = 1/sine(x);       break;
+		case 5: result = 1/cosine(x);     break;
+		case 6: result = 1/tangent(x);    break;            
         }
     }
     if(n<=10 && n>=7){
     	printf("\n Enter a number : ");
         scanf("%f",&x);
     	switch (n){
-    		case 7: result = loge(x);     break;
+		case 7: result = loge(x);     break;
     		case 8: result = logten(x);     break;
-            case 9: result = squareroot(x); break;
-            case 10: result = exponent(x);   break;
-		}
+		case 9: result = squareroot(x); break;
+		case 10: result = exponent(x);   break;
 	}
+    }
     
 	if (n==11)
     {
@@ -141,8 +141,8 @@ void scientific(){
     if (n>=1 && n<=11){
 	
     	if (result == 557135104.000000)
-			printf("\n Not defined\n");
-		else
+		printf("\n Result : inf\n");
+	else
         	printf("\n Result : %f\n",result);
 	}
     else
